@@ -1,0 +1,117 @@
+.wrapper{
+    margin:10px auto;
+    padding:0 10%;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .main{
+    width: 100% ;
+    height: 100%;
+  }
+  .title{
+    margin-left:1rem;
+    margin-top:3rem;
+    text-shadow: 0 15px 10px rgba(0,0,0,0.2);
+  }
+  .dropdown{
+    width:30rem;
+    height:3rem;
+    padding:3px;
+    margin: 1rem auto;
+    border-radius: .75rem;
+    border-style: hidden;
+    background-color:white;
+    border-color:white; 
+    border: .35px solid;
+    box-shadow: 5px 10px #035390;
+    border-radius: 1rem;
+    cursor:pointer;
+  }
+  .container{
+    display: grid;
+    gap:15px;
+    grid-template-columns: repeat(auto-fit,min-max(270,1fr));
+  }
+  .box{
+    height: 70px;
+  }
+  /* .box{
+    height: 40%;
+    width:40vw;
+    margin: 1rem auto;
+    padding: 3rem;
+    border:1px solid;
+    box-shadow: 5px 10px #035390;
+    border-radius: 1rem;
+    background-color:white;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    /* grid-template-columns: repeat(auto-fit,min-max(270px,1fr));}  */
+   
+  .footer{
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem; 
+  }
+  .day{
+    box-sizing: border-box;
+    background-color:#f1f5f8;
+    height: 35vh;
+    width:25%;
+    border-style: outset;
+    border-radius: 1rem;
+    padding:20px;
+    display: grid;
+    cursor:pointer;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  }
+  .day:hover{
+    transform: scale(1.1);
+  }
+  @media  (max-width: 770px) {
+   .wrapper{
+    padding:20px;
+   }
+   .day p{
+    font-size: 10px;
+   }
+  }
+   
+  .day p{
+    margin-top: .5rem;
+    color: rgb(181, 12, 24); 
+    font-weight: bold;
+    text-size-adjust: .5rem;
+    text-align: left;
+  }
+  .data{
+    color:black;
+  }
+  .date{
+    color:black;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0 15px 10px rgba(0,0,0,0.2); 
+  }
+  .temp{
+    display: flex;
+    justify-content: flex-start; 
+  }
+  .forecast{
+    margin-left: auto;
+    font-weight: bold;
+    text-align: start;
+  } 
+  .listitem{
+    list-style: none;
+  }
+  .city{
+    font-size:x-large;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+ 
+  }

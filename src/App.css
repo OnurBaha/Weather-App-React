@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: 100px auto;
+  padding: 20px 20px;
+  border-radius: 16px;
+  background-color: #f6fafd;
+}
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fbfcff;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.menu-bar select {
+  padding: 5px;
+  border-radius: 4px;
+  border-color: #d2dbe5;
+  cursor: pointer;
+}
+.menu-bar .toggle {
+  padding: 4px;
+  cursor: pointer;
+}
+.days-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.days-container .day {
+  padding: 12px 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  color: #b6b6b6;
+  font-weight: 600;
+  border-radius: 16px;
+  margin: 2px;
+  border: solid 1px #ececec;
+  background-color: #fbfcff;
+  font-size: 12px;
+}
+.days-container .day:hover {
+  color: #797979;
+}
+.days-container .day:hover .day-img {
+  transform: scale(1.2);
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.days-container .day-img {
+  width: 100%;
+  max-width: 80px;
+  transition: transform 0.4s;
+}
+
+.days-container .day-deg span:first-child {
+  color: #797979;
+  margin-right: 5px;
+}
+
+.days-container .day:nth-child(1) .day-title span {
+  display: none;
+}
+
+.days-container .day:nth-child(1) .day-title::before {
+  content: "Today";
+}
+
+.dark {
+  background-color: #19202e;
+  color: #fff;
+}
+
+.dark .menu-bar {
+  background-color: #1f2936;
+}
+
+.dark .menu-bar select {
+  background-color: #1f2936;
+  color: #fff;
+}
+
+.dark .days-container .day {
+  background-color: #1f2936;
+}
+
+.dark .days-container .day:hover {
+  color: #fff;
+}
+
+.dark .days-container .day-deg span:first-child {
+  color: #fff;
+}
